@@ -12,15 +12,27 @@
   <title>Frontend Mentor | Contact form</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <!-- <style>
-    .attribution { font-size: 11px; text-align: center; }
+  <style>
+    .attribution { font-size: 11px; text-align: left; position: fixed; bottom: 0; right: 0; padding: 5px}
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
+  </style>
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
+  <div class="toast-container">
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-body">
+        <div class="toast-title">
+          <img src="./assets/images/icon-success-check.svg" alt="Success icon" width="20" height="21">
+          Message Sent!
+        </div>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+      </div>
+    </div>
+  </div>
 
   <div class="container">
     <h1>Contact Us</h1>
@@ -74,15 +86,11 @@
     </form>
   </div>
 
-  <!--
 
-  Message Sent!
-  Thanks for completing the form. We'll be in touch soon! -->
-
-  <!-- <div class="attribution">
+  <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+    Coded by <a href="https://www.frontendmentor.io/profile/upmedia">Uffe Petersen</a>.
+  </div>
 </body>
 
 </html>

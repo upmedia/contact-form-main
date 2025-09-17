@@ -34,13 +34,12 @@ form.addEventListener('submit', (event) => {
     });
 
     if (isFormValid) {
-        // form.submit();
-        console.log('Form is valid, submitting...');
+        const toast = document.querySelector('.toast');
+        toast.classList.add('show');
 
         form.reset();
     } else {
         // go to first error
-        // form.querySelector('.error-message:not(:empty)').scrollIntoView({ behavior: 'smooth', block: 'center' });
         form.querySelector(':invalid').focus();
     }
 

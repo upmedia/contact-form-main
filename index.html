@@ -22,19 +22,7 @@
 
 <body>
 
-  <div class="toast-container">
-    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="toast-body">
-        <div class="toast-title">
-          <img src="./assets/images/icon-success-check.svg" alt="Success icon" width="20" height="21">
-          Message Sent!
-        </div>
-        <p>Thanks for completing the form. We'll be in touch soon!</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container">
+  <main class="container">
     <h1>Contact Us</h1>
 
     <form novalidate>
@@ -82,8 +70,20 @@
         <span class="error-message" aria-live="polite"></span>
       </div>
 
-      <button class="span-all">Submit</button>
+      <button class="span-all" type="submit">Submit</button>
     </form>
+  </main>
+
+  <div class="toast-container">
+    <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-body">
+        <div class="toast-title">
+          <img src="./assets/images/icon-success-check.svg" alt="Success icon" width="20" height="21">
+          Message Sent!
+        </div>
+        <p>Thanks for completing the form. We'll be in touch soon!</p>
+      </div>
+    </div>
   </div>
 
 
